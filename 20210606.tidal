@@ -1,0 +1,21 @@
+setcps 125
+
+d1 $s "sn sn 808 sn" #irand 4
+
+d2 $s "numbers*4" #irand 4
+
+d3 $s "cp cp cp" #irand 4
+
+p 1234 $ s "bd bd hh hh" #irand 4
+
+d4 $ sound "drum" |+| n "1 2 3 4" #irand 4
+
+d5 $ sound "808*8" #irand 16
+
+d6 $ s "superpiano!2"
+
+d7 $ s "<supersaw!2>" #irand 8
+
+hush
+
+--reference::https://tidalcycles.org/docs/reference/mini_notation
