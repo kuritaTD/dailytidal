@@ -1,0 +1,28 @@
+d1 $sound "supersaw*8" # up (every 2 (rev) $ run 8)
+
+d2 $sound "testsynth*4" #sustain "0.2" #pan "0 1"
+
+d3 $sound "testsynth*20" #sustain "0.1" #pan "{0 0.5 1}%4"
+
+d4 $sound "testsynth*4" #sustain "0.1" #pan "0 1" #n (irand 12)
+
+d5 $sound "testsynth*2" #sustain "0.2" #pan "{0 0.5 1}%4" # n "9 21"
+
+d6 $sound "superp5str*24" #irand 16
+
+d7 $sound "superwho*4" #irand 16
+
+d8 $sound "superwho*4" #irand 8
+
+d9
+  $every 2 (jux (iter 16))
+  $sometimes (rev)
+  $sound "arpy(2, 8, {0, 3, 0})"
+  #cutoff "{400 12000}%8"
+  #resonace "0.3"
+  # up ( run 8 )
+  # speed ( run 8 )
+
+  hush
+
+  --reference:https://drive.google.com/file/d/1a-9i6u62Nr2IX3DvUEyOoEzv-6Ug8ulC/view
